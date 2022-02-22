@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indie Audio Player</title>
+    <link rel="icon" href="./assets/logotype/play-button.png" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="theme" data-theme="black">
+    <main class="main">
+      <div class="container">
+        <div class="main-row">
+          <div class="main-header-row">
+            <div class="main-colorize">
+              <button class="colorize-btn black" data-theme="black"></button>
+              <button class="colorize-btn coral" data-theme="coral"></button>
+              <button class="colorize-btn orchid" data-theme="orchid"></button>
+              <button class="colorize-btn white" data-theme="white"></button>
+            </div>
+            <div class="main-switcher">
+              <img
+                class="switcher"
+                src="./assets/logotype/list.svg"
+                alt="switcher_list"
+              />
+            </div>
+            <nav class="main-playlist">
+              <ul class="playlist-list">
+                <li>
+                  <p class="list-item">1. Random text</p>
+                  <span>03:00</span>
+                </li>
+                <li>
+                  <p class="list-item">2. Random text</p>
+                  <span>05:43</span>
+                </li>
+                <li>
+                  <p class="list-item">3.Random text</p>
+                  <span>03:23</span>
+                </li>
+                <li>
+                  <p class="list-item">4.Random text</p>
+                  <span>03:26</span>
+                </li>
+                <li>
+                  <p class="list-item">5.Random text</p>
+                  <span>03:23</span>
+                </li>
+                <li>
+                  <p class="list-item">6.Random text</p>
+                  <span>06:31</span>
+                </li>
+                <li>
+                  <p class="list-item">7.Random text</p>
+                  <span>03:12</span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="main-middle-row">
+            <div class="middle_album">
+              <img
+                src="./assets/img/10Age_ft.Ramil-Ay320.jpg"
+                alt="album_background"
+              />
+              <div class="volume-slider"><div class="volume-line"></div></div>
+            </div>
+          </div>
+          <div class="main-section-row">
+            <div class="main-track-title">
+              <p>Playing Now:</p>
+              <p class="track-title">Track Name</p>
+            </div>
+          </div>
+          <div class="main-footer-row">
+            <audio src="/assets/audio/system-of-a-down-toxicity.mp3"></audio>
+            <div class="control-panel">
+              <button class="prev">
+                <svg class="icon">
+                  <use xlink:href="./assets/logotype/left1.svg#left1"></use>
+                </svg></button
+              ><button class="play">
+                <img
+                  class="icon"
+                  src="./assets/logotype/play.svg"
+                  alt="play"
+                /></button
+              ><button class="next">
+                <svg class="icon">
+                  <use xlink:href="./assets/logotype/right2.svg#right2"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="audio-progress-bar">
+              <span class="audio start-time">0:00</span>
+              <div class="progress"><div class="progress-bar"></div></div>
+              <span class="audio end-time">4:50</span>
+            </div>
+            <div class="audio-extensions">
+              <button class="audio-repeat">
+                <svg class="repeat-logo">
+                  <use
+                    xlink:href="./assets/logotype/arrow_shuffle_icon.svg#arrow_shuffle_icon"
+                  ></use>
+                </svg>
+              </button>
+              <button class="audio-volume">
+                <svg class="icon volume-icon">
+                  <use xlink:href="./assets/logotype/volume.svg#volume"></use>
+                </svg>
+              </button>
+              <button class="audio-mixing">
+                <svg class="icon">
+                  <use
+                    xlink:href="./assets/logotype/music-shuffle.svg#music-shuffle"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-links">
+            <a class="links" href="https://github.com/ligalaz" target="_blank"
+              ><svg class="icon">
+                <use
+                  xlink:href="./assets/logotype/icons-github.svg#icons-github"
+                ></use>
+              </svg>
+            </a>
+          </div>
+          <div class="footer-created">
+            <p>Created By Artsiom Mikula</p>
+            <p>Minsk<time class="footer-year"> 2022</time></p>
+          </div>
+          <div class="footer-school">
+            <div class="footer-logo">
+              <a href="https://rs.school/" target="_blank">
+                <svg class="logo">
+                  <use
+                    xlink:href="./assets/logotype/rs_school.svg#rs_school"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
